@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html, body {
+    background-color: #f7f7f7;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+}
+.navbar .right-navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+.navbar .left-navbar a h1 {
+    font-weight: 500;
+    font-size: 25px;
+    color: #000;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.navbar .left-navbar a h1:hover {
+    color: rgb(243, 29, 29);
+}
+.left-navbar h1 span {
+    color: rgb(243, 29, 29);
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.navbar .right-navbar ul li a {
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+.navbar .right-navbar ul li a:hover {
+    color: rgb(243, 29, 29);
+}
+.navbar .right-navbar {
+    display: flex;
+}
+.navbar .right-navbar .menu-bar {
+    display: none;
+}
+.right-navbar .login-btn a {
+    padding: 7px 15px;
+    background-color: rgb(243, 29, 29);
+    border-radius: 5px;
+    border: none;
+    color: #f7f7f7;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.right-navbar .login-btn a:hover {
+    background-color: #f7f7f7;
+    color: rgb(243, 29, 29);
+}
+
+@media only screen and (max-width: 700px) {
+    .navbar {
+        padding: 0 30px;
+    }
+    .navbar .right-navbar .menu-bar {
+        display: block;
+        font-size: 18px;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    .navbar .right-navbar .menu-bar:hover {
+        /* color: rgb(243, 29, 29); */
+        opacity: 0.5;
+    }
+    .navbar .right-navbar ul {
+        position: absolute;
+        top: 60px;
+        left: -100%;
+        right: 0;
+        display: inline;
+        width: 100%;
+        height: 230px;
+        background-color: #fff;
+        transition: 0.3s;
+    }
+    .navbar .right-navbar .list-menu.active {
+        left: 0;
+    }
+    .right-navbar ul li {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .navbar {
+        padding: 0 10px;
+    }
+    .navbar .login-btn {
+        /* margin-left: 5px; */
+    }
+}
+.deals-inform {
+    width: 100%;
+    height: 587px;
+    padding: 130px 40px;
+    /* background-color: rebeccapurple; */
+}
+.deals-inform .d-info {
+    /* justify-content: center; */
+}
+.d-info h5 span {
+    color: rgb(243, 29, 29);
+}
+.d-info h5 {
+    color: #827f7f;
+}
+.d-info h1 span {
+    color: rgb(243, 29, 29);
+}
+.d-info h1 {
+    margin-top: 12px;
+    font-size: 55px;
+    margin-bottom: 12px;
+    line-height: 60px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.d-info .d-btn .moreinfo {
+    padding: 10px 20px;
+    background-color: rgb(243, 29, 29);
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.3s;
+    margin-right: 10px;
+}
+.d-info .d-btn .moreinfo:hover {
+    background-color: #fff;
+    color: rgb(243, 29, 29);
+}
+.d-info .d-btn .deal {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(243, 29, 29);
+    transition: 0.3s;
+}
+.d-info .d-btn .deal:hover {
+    background-color: rgb(243, 29, 29);
+    color: #fff;
+}
+@media only screen and (max-width: 500px) {
+    .deals-inform {
+        width: 100%;
+        height: 400px;
+        padding: 50px 30px;
+        /* background-color: rebeccapurple; */
+    }
+    .d-info h1 {
+        /* margin-top: 5px; */
+        font-size: 40px;
+        /* margin-bottom: 12px; */
+        line-height: 60px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+}
